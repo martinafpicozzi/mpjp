@@ -9,12 +9,12 @@ public class Variable {
         System.out.println(value);
 
         // Dangerous! Beware of null!
-        String noName = null;
+        String noName = null; //null è un finto indirizzo, non ho un reference per quell'oggetto
         System.out.println(noName);
         
         // Java 10 inferred type
-        var bValue = 42;
-        var bName = "Tom";
+        var bValue = 42; //con java 10, se scrivo var è java che attribuisce la tipologia di variabile
+        var bName = "Tom"; //qui java capisce che è una stringa
 
         System.out.println(bName);
         System.out.println(bValue);
