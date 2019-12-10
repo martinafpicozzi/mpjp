@@ -11,7 +11,7 @@ public class Widening {
 
         System.out.println(d);
 
-        char c = (char) s;
+        char c = (char) s; // collega in questo caso il 42 con la codifica UTF-8
         int i2 = c;
         System.out.println(c + " " + i2);
     }
