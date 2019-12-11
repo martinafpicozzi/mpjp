@@ -8,11 +8,12 @@ public class Exercise3 { // quanti sono i numeri pari nell'array e somma dei num
 
 		for (int i = 0; i < array.length; i++) {
 			if (array[i] % 2 == 0) {
-				++counter; 
-			else
-				sumodds += array[i];
+				++counter;
+			} else {
+				sumodds = array[i] + sumodds;
 			}
 		}
-		System.out.println("Your array has " + counter + " even number(s)");
-		}
+		System.out.println("Your array has " + counter + " even number(s)." + "The sum of your odd numbers is "
+				+ sumodds + ". Thank you for your time.");
 	}
+}

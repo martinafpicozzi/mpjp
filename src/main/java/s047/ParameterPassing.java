@@ -2,11 +2,11 @@ package s047;
 
 import java.util.Objects;
 
-public class ParameterPassing {
-    static void primitive(int parameter) {
+public class ParameterPassing { // java esegui questa classe PP, deve esserci il metodo main, che è alla riga 52
+    static void primitive(int parameter) { //in parameter mette primitiveValue =12 perchè fa il passaggio by value, indicato nel main. E' una variabile inizializzata dal chiamante (il chiamante di primitive è main, main chiama primitive alla riga 56)
         parameter += 1;
         System.out.println("parameter is " + parameter);
-    }
+    } // finisce il blocco e il return è sottointeso
 
     static void immutableReference(String parameter) {
         if (parameter == null) {
@@ -53,7 +53,7 @@ public class ParameterPassing {
         int primitiveValue = 12;
 
         System.out.println("primitiveValue has been initialized to " + primitiveValue);
-        primitive(primitiveValue);
+        primitive(primitiveValue); // invocazione al metodo primitive (è un metodo perchè è seguito dalle parentesi tonde) della classe corrente, che è ParameterPassing, passandogli la variabile primitiveValue
         System.out.println("primitiveValue is still " + primitiveValue);
 
         String string = "Hi";
