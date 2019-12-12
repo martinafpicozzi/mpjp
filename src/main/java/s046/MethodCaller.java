@@ -6,10 +6,10 @@ public class MethodCaller {
          
         Simple reference = new Simple(); // stanzia un oggetto di tipo Simple nello heap e alloca nello stack spazio per una variabile di tipo reference chiamata reference e nello spazio metti il reference dell'oggetto Simple. Se non c'è l'oggetto non posso chiamare i metodi.
         
-        int result = reference.f(7, 6);
+        int result = reference.f(7, 6); //chiamare il metodo f di reference
         System.out.println(result);
         
-        reference.g(true); //metodo g // reference è una variabile reference a Simple. E' UN REFERENCE A UN OGGETTO DI TIPO SIMPLE 
+        reference.g(true); //vai a chiamare il metodo g // reference è una variabile reference a Simple. E' UN REFERENCE A UN OGGETTO DI TIPO SIMPLE 
         reference.g(false);
     }
 }
