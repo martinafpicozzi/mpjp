@@ -2,11 +2,11 @@ package s050;
 
 public class AboutStringBuilder {
     public static void main(String[] args) {
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder(); // creazione di 3 SB
         StringBuilder sb2 = new StringBuilder(20);
-        StringBuilder sb3 = new StringBuilder("hello");
+        StringBuilder sb3 = new StringBuilder("hello"); // la stringa viene modificata con i comandi che indichiamo sotto
         
-        System.out.println("capacity 1: " + sb.capacity());
+        System.out.println("capacity 1: " + sb.capacity()); // capacità: quanto spazio allocato per lo SB
         System.out.println("capacity 2: " + sb2.capacity());
         System.out.println("capacity 3: " + sb3.capacity());
         
@@ -18,11 +18,11 @@ public class AboutStringBuilder {
         
         System.out.println("index of \"elo\": " + sb3.indexOf("elo"));
         
-        System.out.println("inserting \"lo c\" at 3: " + sb3.insert(3, "lo c"));
+        System.out.println("inserting \"lo c\" at 3: " + sb3.insert(3, "lo c")); //inserire una stringa a partire da una certa posizione
         
         System.out.println("current sb3 length: " + sb3.length());
         
-        System.out.println("replace section 2-7 with \"r r\": " + sb3.replace(2, 7, "r r"));
+        System.out.println("replace section 2-7 with \"r r\": " + sb3.replace(2, 7, "r r")); // dalla posizione 2 alla posizione 7 (esclusa)
         
         System.out.println("reversing: " + sb3.reverse());
         
