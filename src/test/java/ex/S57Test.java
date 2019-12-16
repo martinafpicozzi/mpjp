@@ -12,16 +12,23 @@ class S57Test {
     void speedPlain() {
         double actual = S57.speed(100, 9.58);
 
-        assertEquals(actual, 10.438, 0.001);
+        assertEquals(actual, 10.438, 0.001); // 0.001 è il delta, lo scarto che può accettare
     }
 
     @Test
     void speedInfinity() {
-        double actual = S57.speed(100, 0);
+        double actual = S57.speed(100, 0); //100 metri in 0 secondi
 
-        assertThat(actual, is(Double.POSITIVE_INFINITY));
+        assertThat(actual, is(Double.POSITIVE_INFINITY)); // Double è il wrapper (classe) per il double con la d minuscola.  
     }
 
+    @Test
+    void speedPlain2() {
+        double actual = S57.speed(100, 2);
+
+        assertEquals(actual, 50.0);
+    }
+    
     @Test
     void distanceSquareTwo() {
         double actual = S57.distance(1, 10, 2, 9);

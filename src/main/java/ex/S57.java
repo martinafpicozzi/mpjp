@@ -4,13 +4,12 @@ public class S57 {
     /**
      * Average speed
      * 
-     * @param distance in meters
+     * @param distance in meters //il parametro distance è espresso in metri
      * @param time     in seconds
      * @return speed in meters per second
      */
     public static double speed(double distance, double time) {
-        // TODO
-        return 0;
+        return distance / time;
     }
 
     /**
@@ -23,8 +22,7 @@ public class S57 {
      * @return distance
      */
     public static double distance(int x0, int y0, int x1, int y1) {
-        // TODO
-        return 0;
+        return Math.sqrt(Math.pow(x1 - x0, 2) + Math.pow(y1 - y0, 2));
     }
 
     /**
@@ -36,11 +34,9 @@ public class S57 {
      * @return the engine capacity in cm^3
      */
     public static double engineCapacity(double bore, double stroke, int nr) {
-        // TODO
-        return 0;
+    	return ((Math.pow((bore / 2), 2) * Math.PI * stroke) * nr) / 1000;
     }
 
-    // somma delle cifre in un numero
     /**
      * Add up all the digits in an integer
      * 
@@ -48,7 +44,12 @@ public class S57 {
      * @return sum of digits
      */
     public static int digitSum(int value) {
-        // TODO
-        return 0;
+    	int result = 0;
+    	value = Math.abs(value);
+    	while (value != 0) {
+    	result += value % 10;
+    	value /= 10; // value = value / 10
+    	}
+        return result;
     }
 }
