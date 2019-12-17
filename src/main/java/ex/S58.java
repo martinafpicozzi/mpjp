@@ -73,7 +73,7 @@ public class S58 {
 	 */
 	public static char vote(double percentile) {
 		if (percentile <= 50) {
-			return 'F';
+			return 'F'; // apice singolo è char, la stringa ha doppi apici
 		} else if (percentile > 50 && percentile <= 60) {
 			return 'E';
 		} else if (percentile > 60 && percentile <= 70) {
@@ -96,7 +96,7 @@ public class S58 {
 	public static boolean isLeapYear(int year) {
 		if (year % 400 == 0) {
 			return true;
-		} else if ((year % 4 == 0) && !(year % 100 == 0)) {
+		} else if ((year % 4 == 0) && !(year % 100 == 0)) { // oppure (year % 4 == 0) && (year % 100 != 0)
 			return true;
 		} else {
 			return false;
@@ -111,9 +111,27 @@ public class S58 {
 	 * @param c
 	 * @return a sorted array
 	 */
-	public static int[] sort(int a, int b, int c) {
-		int[] result = new int[3];
-		
-	return 0;		
-	}
+//	public static int[] sort(int a, int b, int c) {
+//		int[] result = new int[3];
+//		if (a < b) {
+//			if (c < a) {
+//				result [0] = c;
+//				result [1] = a;
+//				result [2] = b;
+//			} else if (c > b) {
+//				result [0] = a;
+//				result [1] = b;
+//				result [2] = c;
+//			} else {
+//				result [0] = a;
+//				result [1] = c;
+//				result [2] = b;
+//				
+//		if (a > b) {
+//			if (b < c) { // da ripetere ancora 2 volte cambiando l'ordine negli if
+//		}
+//			}
+//		}
+//	}
+//	}
 }

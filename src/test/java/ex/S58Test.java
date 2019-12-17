@@ -84,13 +84,13 @@ class S58Test {
         assertThat(actual, is(false));
     }
 
-    @Test
-    void sortPlain() {
-        int[] actual = S58.sort(3, 2, 1);
-
-        assertThat(actual.length, is(3));
-        assertThat(actual[0], is(1));
-        assertThat(actual[1], is(2));
-        assertThat(actual[2], is(3));
-    }
+//    @Test
+//    void sortPlain() {
+//        int[] actual = S58.sort(3, 2, 1);
+//
+//        assertThat(actual.length, is(3));
+//        assertThat(actual[0], is(1));
+//        assertThat(actual[1], is(2));
+//        assertThat(actual[2], is(3));
+//    }
 }

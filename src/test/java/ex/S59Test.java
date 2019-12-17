@@ -1,6 +1,6 @@
 package ex;
 
-import static org.junit.jupiter.api.Assertions.*;
+//import static org.junit.jupiter.api.Assertions.*;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -15,6 +15,14 @@ class S59Test {
         assertThat(actual, is(6L));
     }
 
+    @Test
+    void sumPositive2() {
+        long actual = S59.sum(2_000_000_000, 2_000_000_001);
+
+        assertThat(actual, is(4_000_000_001L));
+    }
+    
+    
     @Test
     void sumNegPos() {
         long actual = S59.sum(-3, 3);
@@ -78,13 +86,14 @@ class S59Test {
         assertThat(actual, is(0L));
     }
 
-    @Test
-    void fibonacci() {
-        fail("Not yet implemented");
-    }
+//    @Test
+//    void fibonacci() 
+//    }
 
     @Test
     void multiplicationTable() {
-        fail("Not yet implemented");
+        	int[][] actual = S59.multiplicationTable(3);
+        	
+        	assertThat(actual, is (9));
     }
 }
