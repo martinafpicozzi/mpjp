@@ -86,7 +86,7 @@ public class S59 {
 	 * @return The multiplication table for value, when possible
 	 */
 	public static int[][] multiplicationTable(int value) {
-		int[][] result = new int[0][0];
+		int[][] result = new int[value][value];
 		for (int i = 0; i < value; i++) { // i è l'indice per le righe
 			for (int j = 0; j < value; j++) { // j è l'indice per le colonne
 				result[i][j] = (i + 1) * (j + 1);

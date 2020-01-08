@@ -85,15 +85,10 @@ class S59Test {
 
         assertThat(actual, is(0L));
     }
+}
 
 //    @Test
 //    void fibonacci() 
 //    }
 
-    @Test
-    void multiplicationTable() {
-        	int[][] actual = S59.multiplicationTable(3);
-        	
-        	assertThat(actual, is (9));
-    }
-}
+ // test array bidimensionele vedi test 2
