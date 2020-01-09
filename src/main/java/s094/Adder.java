@@ -10,7 +10,7 @@ public class Adder {
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNext()) {
             if (scanner.hasNextDouble()) {
-                result += scanner.nextDouble();
+                result += scanner.nextDouble(); // per concludere lo stream ctrl + z (scrivere nella console)
             } else {
                 System.out.println("Bad input, discarded: " + scanner.next());
             }
