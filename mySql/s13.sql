@@ -1,7 +1,7 @@
 -- simple pattern matching
 select last_name
 from employees
-where last_name like '_ul%';
+where last_name like '_ul%'; -- se metto like binary quello in ' ' diventa case sensitive 
 
 -- interval check
 select *

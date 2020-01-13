@@ -3,7 +3,7 @@
 use me;
 
 -- regions
-drop table if exists regions;
+drop table if exists regions; -- prima di creare regions elimina una regions precedente, ricominciamo da capo
 
 create table regions(
 	region_id integer

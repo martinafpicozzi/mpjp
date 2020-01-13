@@ -1,7 +1,7 @@
 -- that one
-select *
+select * -- tutte le colonne
 from regions
-where region_id = 1;
+where region_id = 1; -- where indica le righe
 
 -- the other ones
 select *

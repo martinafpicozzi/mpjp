@@ -11,4 +11,4 @@ where salary > 20000 or last_name = 'King';
 -- the other way round
 select *
 from employees
-where not department_id > 20;
+where not department_id > 20; -- quindi minore o uguale
