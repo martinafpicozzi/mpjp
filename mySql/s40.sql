@@ -1,5 +1,5 @@
 -- average
-select avg(salary)
+select avg(salary) -- media dei salari
 from employees
 where department_id = 50;
 
