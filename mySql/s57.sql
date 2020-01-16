@@ -1,8 +1,8 @@
 -- create table with constraints
 create table details (
-    detail_id integer primary key
-        constraint detail_id_ck check (mod(detail_id, 2) = 1),
---    detail_id integer primary key auto_increment,
+    detail_id integer primary key auto_increment,
+          -- constraint detail_id_ck check (mod(detail_id, 2) = 1),
+        -- detail_id integer primary key auto_increment,
     status char default 'A'
         constraint detail_status_ck check (status in ('A', 'B', 'X')),
 --	status enum('A', 'B', 'X') default 'A',
