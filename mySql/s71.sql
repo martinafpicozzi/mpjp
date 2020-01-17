@@ -2,7 +2,7 @@
 
 use me;
 
-drop function if exists before_update_salary;
+drop trigger if exists before_update_salary;
 
 delimiter //
 
@@ -16,6 +16,6 @@ end;
 // delimiter ;
 
 update coders
-set salary = salary + 3;
+set salary = salary + 7;
 
 select * from coders;

@@ -5,8 +5,8 @@ delimiter //
 
 create procedure condition_example()
 begin
-	declare v_a integer default 1;
-	declare v_b varchar(20);
+	declare v_a integer default 1; -- variabile dichiarata e assegnata
+	declare v_b varchar(20); -- variabile solo dichiarata
 	declare v_c varchar(20);
 
 	if v_a > 0 then
@@ -19,7 +19,7 @@ begin
 
 	case v_a
 		when -1 then
-			set v_c = 'v_a is minus one';
+			set v_c = 'v_a is minus one'; -- metto in v_c una stringa
 		when 0 then
 			set v_c = 'v_a is zero';
 		when 1 then
@@ -28,7 +28,7 @@ begin
 			set v_c = 'v_a is unknown';
 	end case;
 
-	select v_b as 'if message', v_c as 'switch message';
+	select v_b as 'if message', v_c as 'switch message'; --  ritorna una tabella con 2 colonne, con v_b e v_c, con due nomi e nella tabella ci saranno i due valori delle variabili
 end;
 
 // delimiter ;
