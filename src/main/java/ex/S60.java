@@ -1,6 +1,6 @@
 package ex;
 
-import java.lang.reflect.Array;
+// import java.lang.reflect.Array;
 
 public class S60 {
 	/**
@@ -41,13 +41,19 @@ public class S60 {
 	 */
 //	public static String removeVowels(String s) {
 //		StringBuilder sb = new StringBuilder();
-//		for (int i = 0; i < s.length() - 1; i++) {
+//		for (int i = 0; i < s.length() -1 ; i++) {
 //			if ((s.charAt(i)) != ('a', 'e', 'i' , 'o' , 'u')) {
 //				sb.append(s.charAt(i));
 //			}
 //		}
 //		return sb.toString();
 //	}
+	
+	public static String removeVowels2(String s) {
+		String string = s;
+		s = string.replaceAll("[aAeEiIoOuU]", "");
+		return s;
+	}
 
 	/**
 	 * Convert from binary to decimal
@@ -56,8 +62,14 @@ public class S60 {
 	 * @return the converted integer
 	 */
 	public static int bin2dec(String s) {
-		// TODO
-		return 0;
+		int somma = 0;
+		int len = s.length();
+		for (int i = 0; i < s.length(); i ++ ) {
+			if (s.charAt(i) == '1') {
+				somma += Math.pow(2, (len-1-i));
+			}		
+		}
+		return somma;
 	}
 
 	/**
