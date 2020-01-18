@@ -62,14 +62,14 @@ public class S60 {
 	 * @return the converted integer
 	 */
 	public static int bin2dec(String s) {
-		int somma = 0;
+		int sum = 0;
 		int len = s.length();
 		for (int i = 0; i < s.length(); i ++ ) {
 			if (s.charAt(i) == '1') {
-				somma += Math.pow(2, (len-1-i));
+				sum += Math.pow(2, (len-1-i));
 			}		
 		}
-		return somma;
+		return sum;
 	}
 
 	/**
