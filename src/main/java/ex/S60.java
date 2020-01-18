@@ -39,15 +39,15 @@ public class S60 {
 	 * @param s
 	 * @return a string, same of input but without vowels
 	 */
-//	public static String removeVowels(String s) {
-//		StringBuilder sb = new StringBuilder();
-//		for (int i = 0; i < s.length() -1 ; i++) {
-//			if ((s.charAt(i)) != ('a', 'e', 'i' , 'o' , 'u')) {
-//				sb.append(s.charAt(i));
-//			}
-//		}
-//		return sb.toString();
-//	}
+	public static String removeVowels(String s) {
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < s.length() -1 ; i++) {
+			if (s.charAt(i) != 'a' && s.charAt(i) != 'e' && s.charAt(i) != 'i' && s.charAt(i) != 'i' && s.charAt(i) != 'o' && s.charAt(i) != 'u') {
+				sb.append(s.charAt(i));
+			}
+		}
+		return sb.toString();
+	}
 	
 	public static String removeVowels2(String s) {
 		String string = s;
