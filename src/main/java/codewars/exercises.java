@@ -53,7 +53,7 @@ public class exercises {
 			}
 		}
 		int sum2 = 0;
-		int len2 = s.length();
+		int len2 = t.length();
 		for (int i = 0; i < t.length(); i++) {
 			if (s.charAt(i) == '1') {
 				sum2 += Math.pow(2, (len2 - 1 - i));
